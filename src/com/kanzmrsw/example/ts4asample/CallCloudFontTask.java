@@ -66,7 +66,7 @@ public class CallCloudFontTask extends AsyncTask<String, Void, String> {
             Log.v("TS4ASample", "api_key: " + params[0]);
             Log.v("TS4ASample", "text: " + params[1]);
 
-            post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+            post.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
 
             HttpResponse response = client.execute(post);
             int statusCode = response.getStatusLine().getStatusCode();
