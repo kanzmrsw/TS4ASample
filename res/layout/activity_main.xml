@@ -4,6 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your password"
+        android:inputType="textPassword" />
+
     <Button
         android:id="@+id/btnGetApiKey"
         android:layout_width="match_parent"
@@ -20,7 +34,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Request Text"
-        android:inputType="text" />
+        android:inputType="text"
+        android:singleLine="false" />
+
+    <Spinner
+        android:id="@+id/spSelectFont"
+        android:entries="@array/fonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnRequestFont"
@@ -31,6 +52,8 @@
     <TextView
         android:id="@+id/tvResultText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:singleLine="false" />
 
 </LinearLayout>

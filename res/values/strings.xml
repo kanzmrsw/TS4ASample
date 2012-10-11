@@ -1,8 +1,15 @@
 <resources>
 
     <string name="app_name">TS4ASample</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="fonts">
+        <item>Reimin Bold</item>
+        <item>UD Shin Go Bold</item>
+        <item>Maru Folk Bold</item>
+        <item>Haruhi Gakuen</item>
+        <item>Kanteiryu</item>
+    </string-array>
 
 </resources>

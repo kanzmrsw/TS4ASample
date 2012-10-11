@@ -42,10 +42,9 @@ public class GetApiKeyTask extends AsyncTask<String, Void, String> {
 
             HttpPost post = new HttpPost("https://api.typesquare.com/api/auth");
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-            nameValuePairs.add(new BasicNameValuePair("mail_address",
-                    "ma8test@test.com"));
-            nameValuePairs.add(new BasicNameValuePair("password",
-                    "ma8testmorisawa"));
+            nameValuePairs
+                    .add(new BasicNameValuePair("mail_address", params[0]));
+            nameValuePairs.add(new BasicNameValuePair("password", params[1]));
             post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
             HttpResponse response = client.execute(post);

@@ -54,12 +54,11 @@ public class CallCloudFontTask extends AsyncTask<String, Void, String> {
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(7);
             nameValuePairs.add(new BasicNameValuePair("method",
                     "typesquare.dynamic.css"));
-            nameValuePairs.add(new BasicNameValuePair("mail_address",
-                    "ma8test@test.com"));
-            nameValuePairs.add(new BasicNameValuePair("api_key", params[0]));
-            nameValuePairs.add(new BasicNameValuePair("text", params[1]));
-            nameValuePairs.add(new BasicNameValuePair("fontname",
-                    "Maru Folk Bold"));
+            nameValuePairs
+                    .add(new BasicNameValuePair("mail_address", params[0]));
+            nameValuePairs.add(new BasicNameValuePair("api_key", params[1]));
+            nameValuePairs.add(new BasicNameValuePair("text", params[2]));
+            nameValuePairs.add(new BasicNameValuePair("fontname", params[3]));
             nameValuePairs.add(new BasicNameValuePair("type", "TTF"));
             nameValuePairs.add(new BasicNameValuePair("binary", "1"));
 
